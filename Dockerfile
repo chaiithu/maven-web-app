@@ -6,4 +6,4 @@ EXPOSE 8080
 
 WORKDIR /usr/local/tomcat/webapps/
 
-ENTRYPOINT ["catalina.sh" ,"run"]
+CMD ["catalina.sh" ,"run"]

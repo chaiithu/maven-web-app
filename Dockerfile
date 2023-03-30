@@ -1,6 +1,6 @@
-FROM tomcat:latest
+FROM tomcat:8
 
-COPY target/01-maven-web-app*.war  usr/local/tomcat/webapps/
+COPY target/*.war  usr/local/tomcat/webapps/
 
 EXPOSE 8080
 

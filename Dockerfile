@@ -1,9 +1,7 @@
-FROM tomcat:8.0.0
+FROM tomcat:8-alpine
 
-COPY target/*.war  usr/local/tomcat/webapps/
+COPY target/*.war  /usr/local/tomcat/webapps
 
 EXPOSE 8080
-
-WORKDIR /usr/local/tomcat/webapps/
 
 CMD ["catalina.sh" ,"run"]
